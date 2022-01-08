@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 1rem;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+#grid ol {
+  border-right: 1px solid gray;
+  padding: 2rem;
+  margin: 0;
+}
+li {
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+#grid #article {
+  padding-left: 1rem;
+}
+@media (max-width: 800px) {
+  #grid {
+    display: block;
+  }
+  #grid ol {
+    border-right: none;
+  }
+  li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
